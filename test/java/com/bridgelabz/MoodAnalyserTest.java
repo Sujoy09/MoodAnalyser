@@ -34,7 +34,7 @@ public class MoodAnalyserTest {
     }
 
     @Test
-    public void givenNullMoodShouldReturnHappy() {
+    public void givenNullMoodShouldThrowException() {
         ExpectedException exceptionrule = ExpectedException.none();
         exceptionrule.expect(MoodAnalysisException.class);
         MoodAnalyser moodAnalyser = new MoodAnalyser();
